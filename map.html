@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+ 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+        <link rel="stylesheet" href="leaflet.css" />
+</head>
+<body>
+
+        <div style="display: block; margin: 0 auto; text-align: center;">
+          <div id="map" style="width: 100px; height: 100px; display: inline-block;"></div>
+          <div id="ad" style="width: 300px; height:250px; display: inline-block; align=top">
+            <div id="info" style="font-family:sans-serif">
+            <h2><a href="41j.com/blog/fractalslippmap.html">Read More</a></h2>
+            </div>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- map --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-9449433064496325" data-ad-slot="4439120818"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+          </div> 
+        </div>
+
+        <script src="leaflet.js"></script>
+        <script>
+                document.getElementById('map').style.width  = window.innerWidth-320 + "px";
+                document.getElementById('map').style.height = window.innerHeight-20 + "px";
+ 
+                var map = L.map('map').setView([-10, -360], 2);
+ 
+                L.tileLayer('http://localhost:8080/map/{z}/{x}/{y}.png', {
+                        maxZoom: 18,
+                        attribution: 'gu.pe',
+                        id: 'example'
+                }).addTo(map);
+ 
+ 
+ //               var popup = L.popup();
+ //
+ //               function onMapClick(e) {
+ //                       popup
+ //                               .setLatLng(e.latlng)
+ //                               .setContent("You clicked the map at " + e.latlng.toString())
+ //                               .openOn(map);
+ //               }
+ 
+ //               map.on('click', onMapClick);
+
+                //L.invalidateSize();
+ 
+        </script>
+
+</body>
+</html>
